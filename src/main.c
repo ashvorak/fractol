@@ -6,19 +6,27 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/05 15:01:21 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/18 14:02:37 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/fdf.h"
+#include "../inc/fractol.h"
 
-static t_proj	*new_proj(void)
+static void		ft_usage(void)
+{
+	ft_printf("Usage : ./fractol <name>\n");
+	ft_printf("        <name> : Mandelbrot\n");
+	ft_printf("               : Julia\n");
+	exit(1);
+}
+
+static t_proj	*new_proj(int fractol)
 {
 	t_proj *proj;
 
 	if (!(proj = (t_proj*)malloc(sizeof(t_proj))))
 		return (NULL);
-	proj->list = NULL;
+	proj->fractol = fractol;
 	proj->mlx_ptr = NULL;
 	proj->win_ptr = NULL;
 	proj->width = 0;
@@ -35,40 +43,29 @@ static int		exit_x(void)
 	exit(0);
 }
 
-static void		free_proj(t_proj *proj)
+static int		check_fractol(char *av)
 {
-	int i;
-
-	i = 0;
-	while (i < proj->height)
-	{
-		free(proj->list[i]);
-		i++;
-	}
-	free(proj->list);
+	if (!ft_strcmp(av, "Mandelbrot"))
+		return (Mandelbrot);
+	else if (!ft_strcmp(av, "Julia"))
+		return (Julia);
+	return (Fail);
 }
 
-int				main(int argc, char **argv)
+int				main(int ac, char **av)
 {
-	int		fd;
-	t_proj	*proj;
+	int			fractol;
+	t_proj		*proj;
 
-	proj = new_proj();
-	if (argc == 2)
-		fd = open(argv[1], O_RDONLY);
-	else
-	{
-		ft_printf("Usage : ./fdf <filename>\n");
-		exit(1);
-	}
-	read_file(fd, proj);
+	fractol = 0;
+	if (ac != 2 || !(fractol = check_fractol(av[1])))
+		ft_usage();
+	proj = new_proj(fractol);
 	proj->mlx_ptr = mlx_init();
-	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "FdF");
+	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "Fractol");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
 	display(proj);
-	mlx_hook(proj->win_ptr, 2, 5, move, proj);
 	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);
 	mlx_loop(proj->mlx_ptr);
-	free_proj(proj);
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oshvorak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/25 19:40:38 by oshvorak          #+#    #+#             */
-/*   Updated: 2017/10/25 19:44:16 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/12 12:00:31 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,5 +92,9 @@ void				ft_charreplace(char *s, char c, char x);
 char				*ft_strcapitalize(char *str);
 int					ft_listsize(t_list *begin_list);
 int					ft_atoi_base(const char *str, int base);
+int					ft_array_size(char **arr);
+void				ft_free_arr(char **arr);
+void				ft_free_arr_int(int **arr, int size);
+char 				*ft_itoa_base(size_t value, int base);
 
 #endif

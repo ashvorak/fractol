@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="fractol" targetName="fractol" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b20c4ab6-b3d4-4703-b6a1-a20aa46a608a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/julia.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/mandelbrot.c" />
+      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change beforePath="$PROJECT_DIR$/inc/fractol.h" afterPath="$PROJECT_DIR$/inc/fractol.h" />
+      <change beforePath="$PROJECT_DIR$/lib/Makefile" afterPath="$PROJECT_DIR$/lib/Makefile" />
+      <change beforePath="$PROJECT_DIR$/lib/author" afterPath="$PROJECT_DIR$/lib/author" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_atoi.c" afterPath="$PROJECT_DIR$/lib/ft_atoi.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_atoi_base.c" afterPath="$PROJECT_DIR$/lib/ft_atoi_base.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_bzero.c" afterPath="$PROJECT_DIR$/lib/ft_bzero.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_charreplace.c" afterPath="$PROJECT_DIR$/lib/ft_charreplace.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_factorial.c" afterPath="$PROJECT_DIR$/lib/ft_factorial.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_isalnum.c" afterPath="$PROJECT_DIR$/lib/ft_isalnum.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_isalpha.c" afterPath="$PROJECT_DIR$/lib/ft_isalpha.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_isascii.c" afterPath="$PROJECT_DIR$/lib/ft_isascii.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_isdigit.c" afterPath="$PROJECT_DIR$/lib/ft_isdigit.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_isprint.c" afterPath="$PROJECT_DIR$/lib/ft_isprint.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_itoa.c" afterPath="$PROJECT_DIR$/lib/ft_itoa.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_listsize.c" afterPath="$PROJECT_DIR$/lib/ft_listsize.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstadd.c" afterPath="$PROJECT_DIR$/lib/ft_lstadd.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstdel.c" afterPath="$PROJECT_DIR$/lib/ft_lstdel.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstdelone.c" afterPath="$PROJECT_DIR$/lib/ft_lstdelone.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstiter.c" afterPath="$PROJECT_DIR$/lib/ft_lstiter.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstmap.c" afterPath="$PROJECT_DIR$/lib/ft_lstmap.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_lstnew.c" afterPath="$PROJECT_DIR$/lib/ft_lstnew.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memalloc.c" afterPath="$PROJECT_DIR$/lib/ft_memalloc.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memccpy.c" afterPath="$PROJECT_DIR$/lib/ft_memccpy.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memchr.c" afterPath="$PROJECT_DIR$/lib/ft_memchr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memcmp.c" afterPath="$PROJECT_DIR$/lib/ft_memcmp.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memcpy.c" afterPath="$PROJECT_DIR$/lib/ft_memcpy.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memdel.c" afterPath="$PROJECT_DIR$/lib/ft_memdel.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memmove.c" afterPath="$PROJECT_DIR$/lib/ft_memmove.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_memset.c" afterPath="$PROJECT_DIR$/lib/ft_memset.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/inc/ft_printf.h" afterPath="$PROJECT_DIR$/lib/ft_printf/inc/ft_printf.h" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/active_bits.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/active_bits.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/convert_base.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/convert_base.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/convert_float.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/convert_float.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/convert_int.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/convert_int.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/ft_printf.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/ft_printf.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/ft_putwchar.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/ft_putwchar.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/ft_realloc.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/ft_realloc.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_char.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_char.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_float.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_float.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_n.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_n.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_num.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_num.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_qualifier.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_qualifier.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_str.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_str.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_value.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_value.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_wchar.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_wchar.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/handle_wstr.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/handle_wstr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/is_type.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/is_type.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/make_colors.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/make_colors.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_printf/src/size_char.c" afterPath="$PROJECT_DIR$/lib/ft_printf/src/size_char.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putchar.c" afterPath="$PROJECT_DIR$/lib/ft_putchar.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putchar_fd.c" afterPath="$PROJECT_DIR$/lib/ft_putchar_fd.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putendl.c" afterPath="$PROJECT_DIR$/lib/ft_putendl.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putendl_fd.c" afterPath="$PROJECT_DIR$/lib/ft_putendl_fd.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putnbr.c" afterPath="$PROJECT_DIR$/lib/ft_putnbr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putnbr_fd.c" afterPath="$PROJECT_DIR$/lib/ft_putnbr_fd.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putstr.c" afterPath="$PROJECT_DIR$/lib/ft_putstr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_putstr_fd.c" afterPath="$PROJECT_DIR$/lib/ft_putstr_fd.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_sqrt.c" afterPath="$PROJECT_DIR$/lib/ft_sqrt.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strcapitalize.c" afterPath="$PROJECT_DIR$/lib/ft_strcapitalize.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strcat.c" afterPath="$PROJECT_DIR$/lib/ft_strcat.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strchr.c" afterPath="$PROJECT_DIR$/lib/ft_strchr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strclr.c" afterPath="$PROJECT_DIR$/lib/ft_strclr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strcmp.c" afterPath="$PROJECT_DIR$/lib/ft_strcmp.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strcpy.c" afterPath="$PROJECT_DIR$/lib/ft_strcpy.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strdel.c" afterPath="$PROJECT_DIR$/lib/ft_strdel.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strdup.c" afterPath="$PROJECT_DIR$/lib/ft_strdup.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_striter.c" afterPath="$PROJECT_DIR$/lib/ft_striter.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_striteri.c" afterPath="$PROJECT_DIR$/lib/ft_striteri.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strjoin.c" afterPath="$PROJECT_DIR$/lib/ft_strjoin.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strlcat.c" afterPath="$PROJECT_DIR$/lib/ft_strlcat.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strlen.c" afterPath="$PROJECT_DIR$/lib/ft_strlen.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strmap.c" afterPath="$PROJECT_DIR$/lib/ft_strmap.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strmapi.c" afterPath="$PROJECT_DIR$/lib/ft_strmapi.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strncat.c" afterPath="$PROJECT_DIR$/lib/ft_strncat.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strncpy.c" afterPath="$PROJECT_DIR$/lib/ft_strncpy.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strnequ.c" afterPath="$PROJECT_DIR$/lib/ft_strnequ.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strnew.c" afterPath="$PROJECT_DIR$/lib/ft_strnew.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strnstr.c" afterPath="$PROJECT_DIR$/lib/ft_strnstr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strrchr.c" afterPath="$PROJECT_DIR$/lib/ft_strrchr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strsplit.c" afterPath="$PROJECT_DIR$/lib/ft_strsplit.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strstr.c" afterPath="$PROJECT_DIR$/lib/ft_strstr.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strsub.c" afterPath="$PROJECT_DIR$/lib/ft_strsub.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_strtrim.c" afterPath="$PROJECT_DIR$/lib/ft_strtrim.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_swap.c" afterPath="$PROJECT_DIR$/lib/ft_swap.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_tolower.c" afterPath="$PROJECT_DIR$/lib/ft_tolower.c" />
+      <change beforePath="$PROJECT_DIR$/lib/ft_toupper.c" afterPath="$PROJECT_DIR$/lib/ft_toupper.c" />
+      <change beforePath="$PROJECT_DIR$/lib/get_next_line/get_next_line.c" afterPath="$PROJECT_DIR$/lib/get_next_line/get_next_line.c" />
+      <change beforePath="$PROJECT_DIR$/lib/get_next_line/get_next_line.h" afterPath="$PROJECT_DIR$/lib/get_next_line/get_next_line.h" />
+      <change beforePath="$PROJECT_DIR$/lib/libft.h" afterPath="$PROJECT_DIR$/lib/libft.h" />
+      <change beforePath="$PROJECT_DIR$/src/centering.c" afterPath="$PROJECT_DIR$/src/put_pixel.c" />
+      <change beforePath="$PROJECT_DIR$/src/change_color.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/display.c" afterPath="$PROJECT_DIR$/src/display.c" />
+      <change beforePath="$PROJECT_DIR$/src/line.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" afterPath="$PROJECT_DIR$/src/main.c" />
+      <change beforePath="$PROJECT_DIR$/src/make_list.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/modification.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/move.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/read_file.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/rotation.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/zoom.c" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="478">
+                  <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mandelbrot.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/mandelbrot.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="julia.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/julia.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Makefile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="put_pixel.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/put_pixel.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="display.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/display.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="435">
+                  <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="fractol.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/inc/fractol.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/line.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/src/julia.c" />
+        <option value="$PROJECT_DIR$/src/mandelbrot.c" />
+        <option value="$PROJECT_DIR$/inc/fractol.h" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+        <option value="$PROJECT_DIR$/src/display.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fractol" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="fractol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fractol" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="fractol" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fractol" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="fractol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.fractol">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fractol" RUN_TARGET_NAME="fractol" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="fractol" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fractol" TARGET_NAME="fractol" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fractol" RUN_TARGET_NAME="fractol">
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.fractol" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b20c4ab6-b3d4-4703-b6a1-a20aa46a608a" name="Default" comment="" />
+      <created>1531911863947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531911863947</updated>
+      <workItem from="1531911869537" duration="3523000" />
+      <workItem from="1531922553026" duration="323000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3846000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14296874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37194246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mandelbrot.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/julia.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/put_pixel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/display.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/fractol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/read_file.c" />
+    <entry file="file://$PROJECT_DIR$/lib/ft_printf/inc/ft_printf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ft_free_arr_int.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ft_itoa_base.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ft_free_arr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ft_array_size.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/make_list.c" />
+    <entry file="file://$PROJECT_DIR$/src/move.c" />
+    <entry file="file://$PROJECT_DIR$/src/modification.c" />
+    <entry file="file://$PROJECT_DIR$/src/change_color.c" />
+    <entry file="file://$PROJECT_DIR$/src/centering.c" />
+    <entry file="file://$PROJECT_DIR$/src/zoom.c" />
+    <entry file="file://$PROJECT_DIR$/src/rotation.c" />
+    <entry file="file://$PROJECT_DIR$/inc/fractol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/julia.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/put_pixel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/display.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mandelbrot.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

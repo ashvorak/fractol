@@ -10,9 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = corewar
+NAME = fractol
 
-SRC =	./src/main.c
+FLAGS = -Wall -Wextra -Werror
+
+SRC =	./src/main.c \
+		./src/display.c \
+		./src/put_pixel.c
 
 MLIB = make -C lib
 
@@ -22,7 +26,7 @@ all: $(NAME)
 
 $(NAME): $(SRC)
 	$(MLIB) 
-	gcc -Wall -Wextra -Werror $(SRC) $(LIB) -o $(NAME)
+	gcc $(FLAGS) -lmlx -framework OpenGL -framework AppKit $(SRC) $(LIB) -o $(NAME)
 
 clean:
 	$(MLIB) clean

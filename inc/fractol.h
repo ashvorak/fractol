@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf.h                                              :+:      :+:    :+:   */
+/*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/05 16:07:19 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/18 14:01:15 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,16 @@
 # define WIN_Y 1000
 # define SCALE 30
 
-typedef struct	s_coor
+enum			s_fractol
 {
-	double	x;
-	double	y;
-	double	z;
-	int		color;
-}				t_coor;
+	Fail,
+	Mandelbrot,
+	Julia
+};
 
 typedef struct	s_proj
 {
-	t_coor	**list;
+	int		fractol;
 	void	*mlx_ptr;
 	void	*win_ptr;
 	void	*win_image;
@@ -48,16 +47,10 @@ typedef struct	s_proj
 	int		endian;
 }				t_proj;
 
-void			read_file(int fd, t_proj *proj);
-void			make_list(t_proj *proj, char *buf);
-void			free_arr(char **arr);
-void			zoom(t_proj *proj, double scale);
-void			modification(t_proj *proj, double dx, double dy, double dz);
 void			display(t_proj *proj);
-void			line(t_proj *gen, t_coor t1, t_coor t2);
-int				move(int key, t_proj *proj);
-void			centering(t_proj *proj, double dx, double dy);
-void			rotation(t_proj *proj, int key, double angle);
-void			change_color(t_proj *proj, int key);
+void			put_pixel(int x, int y, t_proj *proj, int color);
+
+void			mandelbrot(t_proj *proj);
+void			julia(t_proj *proj);
 
 #endif
