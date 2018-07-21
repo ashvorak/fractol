@@ -69,3 +69,4 @@ int				main(int ac, char **av)
 	mlx_loop(proj->mlx_ptr);
 	return (0);
 }
+

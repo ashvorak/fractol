@@ -16,7 +16,9 @@ FLAGS = -Wall -Wextra -Werror
 
 SRC =	./src/main.c \
 		./src/display.c \
-		./src/put_pixel.c
+		./src/put_pixel.c \
+		./src/mandelbrot.c \
+		./src/julia.c
 
 MLIB = make -C lib
 

@@ -14,16 +14,18 @@
 # define FRACTOL_H
 
 # include <fcntl.h>
+# include <stdio.h>
 # include <stdlib.h>
 # include <errno.h>
 # include <math.h>
+# include <pthread.h>
 # include "../lib/libft.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/ft_printf/inc/ft_printf.h"
 # include "../minilibx_macos/mlx.h"
 
-# define WIN_X 1500
-# define WIN_Y 1000
+# define WIN_X 1000
+# define WIN_Y 800
 # define SCALE 30
 
 enum			s_fractol
@@ -36,6 +38,8 @@ enum			s_fractol
 typedef struct	s_proj
 {
 	int		fractol;
+	double 	x;
+	double	y;
 	void	*mlx_ptr;
 	void	*win_ptr;
 	void	*win_image;

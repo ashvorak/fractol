@@ -12,23 +12,16 @@
 
 #include "../inc/fractol.h"
 
-static void	show_menu(t_proj *proj)
-{
-	mlx_string_put(proj->mlx_ptr, \
-	proj->win_ptr, 30, 30, 0xFFFFFF, "ZOOM : +, -");
-	mlx_string_put(proj->mlx_ptr, \
-	proj->win_ptr, 30, 60, 0xFFFFFF, "MOVE : ARROWS");
-	mlx_string_put(proj->mlx_ptr, \
-	proj->win_ptr, 30, 360, 0xFFFFFF, "EXIT : ESC");
-	mlx_string_put(proj->mlx_ptr, proj->win_ptr, \
-	1300, 950, 0xFFFFFF, "MADE BY : OSHVORAK");
-}
-
 void		display(t_proj *proj)
 {
+	proj->pixels = (int*)mlx_get_data_addr(proj->win_image, \
+	&proj->bits_per_pixel, &proj->size_line, &proj->endian);
+	mlx_put_image_to_window(proj->mlx_ptr, proj->win_ptr, proj->win_image, 0, 0);
 	if (proj->fractol == Mandelbrot)
 		mandelbrot(proj);
 	else if (proj->fractol == Julia)
 		julia(proj);
-	show_menu(proj);
+	mlx_put_image_to_window(proj->mlx_ptr, proj->win_ptr, proj->win_image, 0, 0);
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, \
+	1300, 950, 0xFFFFFF, "MADE BY : OSHVORAK");
 }

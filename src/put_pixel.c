@@ -22,6 +22,5 @@ void	put_pixel(int x, int y, t_proj *proj, int color)
 	if (color)
 		proj->pixels[i] = color;
 	else
-		proj->pixels[i] = 16657966;
+		proj->pixels[i] = 0;
 }
-
