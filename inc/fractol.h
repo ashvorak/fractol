@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/22 16:14:57 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/22 17:47:53 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,6 @@ void			put_pixel(int x, int y, t_proj *proj, int color);
 void			mandelbrot(t_proj *proj);
 void			julia(t_proj *proj);
 int				manage_keys(int key, t_proj *proj);
-int				manage_mouse(int code);
+int				manage_mouse(int mousecode, int x, int y, t_proj *proj);
 
 #endif

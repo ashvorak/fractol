@@ -1,44 +1,69 @@
 #include "../inc/fractol.h"
-/*
-static void draw()
+
+static int *get_colors(int max, int color)
 {
 	int i;
+	int *colors;
 
 	i = 0;
-	while ()
-}
-*/
-void	mandelbrot(t_proj *proj)
-{
-	int i;
-	int max = 1000;
-	int *colors = (int*)malloc(sizeof(int) * max);
-	int buf = 14129807;
-
-	i = 0;
+	colors = (int*)malloc(sizeof(int) * max);
 	while (i < max) 
 	{
-		colors[i] = buf;
-		buf += 10;
+		colors[i] = color;
+		color += 10;
 		i++;
 	}
-	for (int row = 0; row < WIN_Y; row++) {
-		for (int col = 0; col < WIN_X; col++) {
-			double c_re = (col - WIN_X/proj->zx)*proj->zy/WIN_X;
-			double c_im = (row - WIN_Y/proj->zx)*proj->zy/WIN_X;
-			double x = 0;
-			double y = 0;
-			int iteration = 0;
-			while (x*x+y*y <= 4 && iteration < proj->iteration_max) {
-				double x_new = x*x - y*y + c_re;
-				y = 2*x*y + c_im;
-				x = x_new;
-				iteration++;
-			}
-			if (iteration < proj->iteration_max)
-				put_pixel(col, row, proj, colors[iteration]);
-			else
-				put_pixel(col, row, proj, 0);
-		}
+	return (colors);
+}
+
+static void	iter(t_proj *proj, int row, int col, int *colors)
+{
+	int iteration;
+	double x;
+	double y;
+	double c_re;
+	double c_im;
+	double x_new;
+
+	x = 0;
+	y = 0;
+	c_re = (col - WIN_X/proj->zx)*proj->zy/WIN_X;
+	c_im = (row - WIN_Y/proj->zx)*proj->zy/WIN_X;
+	iteration = 0;
+	while (x*x+y*y <= 4 && iteration < proj->iteration_max)
+	{
+		x_new = x*x - y*y + c_re;
+		y = 2*x*y + c_im;
+		x = x_new;
+		iteration++;
 	}
+	(iteration < proj->iteration_max) ? put_pixel(col, row, proj, \
+	colors[iteration]) : put_pixel(col, row, proj, 0);
+}
+
+static void draw(t_proj *proj, int *colors)
+{
+	int row;
+	int col;
+
+	row = 0;
+	while (row < WIN_Y) 
+	{
+		col = 0;
+		while (col < WIN_X) 
+		{
+			iter(proj, row, col, colors);
+			col++;
+		}
+		row++;
+	}
+}
+
+void	mandelbrot(t_proj *proj)
+{
+	int *colors;
+	int buf = 14129807;
+
+	colors = get_colors(proj->iteration_max, buf);
+	draw(proj, colors);
 }
