@@ -12,15 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b20c4ab6-b3d4-4703-b6a1-a20aa46a608a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hook.c" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change beforePath="$PROJECT_DIR$/inc/fractol.h" afterPath="$PROJECT_DIR$/inc/fractol.h" />
-      <change beforePath="$PROJECT_DIR$/src/display.c" afterPath="$PROJECT_DIR$/src/display.c" />
-      <change beforePath="$PROJECT_DIR$/src/julia.c" afterPath="$PROJECT_DIR$/src/julia.c" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" afterPath="$PROJECT_DIR$/src/main.c" />
-      <change beforePath="$PROJECT_DIR$/src/mandelbrot.c" afterPath="$PROJECT_DIR$/src/mandelbrot.c" />
-      <change beforePath="$PROJECT_DIR$/src/put_pixel.c" afterPath="$PROJECT_DIR$/src/put_pixel.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -233,12 +225,12 @@
       <updated>1531911863947</updated>
       <workItem from="1531911869537" duration="3523000" />
       <workItem from="1531922553026" duration="454000" />
-      <workItem from="1532172148838" duration="9686000" />
+      <workItem from="1532172148838" duration="9740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13663000" />
+    <option name="totallyTimeSpent" value="13717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1237" y="23" width="1288" height="1337" extended-state="0" />

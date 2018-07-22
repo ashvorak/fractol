@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/06/09 18:28:31 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/07/22 13:46:10 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ SRC =	./src/main.c \
 		./src/display.c \
 		./src/put_pixel.c \
 		./src/mandelbrot.c \
-		./src/julia.c
+		./src/julia.c \
+		./src/hook.c
 
 MLIB = make -C lib
 
