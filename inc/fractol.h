@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/22 17:47:53 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/23 18:35:31 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@
 # include "../lib/ft_printf/inc/ft_printf.h"
 # include "../minilibx_macos/mlx.h"
 
-# define WIN_X 600
-# define WIN_Y 400
+# define WIN 800
+# define THEAT_NUM 8
 # define SCALE 30
 
 enum			s_fractol
@@ -38,8 +38,11 @@ enum			s_fractol
 typedef struct	s_proj
 {
 	int		fractol;
+	int		y1;
+	int		y2;
 	double 	zx;
 	double	zy;
+	int		*colors;
 	int		iteration_max;
 	void	*mlx_ptr;
 	void	*win_ptr;

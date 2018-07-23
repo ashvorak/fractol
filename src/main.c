@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/22 18:34:39 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/23 18:40:15 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ static t_proj	*new_proj(int fractol)
 	proj->fractol = fractol;
 	proj->zx = 2.0;
 	proj->zy = 4.0;
-	proj->iteration_max = 100;
+	proj->y1 = 0;
+	proj->y2 = 0;
+	proj->colors = NULL;
+	proj->iteration_max = 50;
 	proj->mlx_ptr = NULL;
 	proj->win_ptr = NULL;
 	proj->pixels = NULL;
@@ -63,8 +66,8 @@ int				main(int ac, char **av)
 		ft_usage();
 	proj = new_proj(fractol);
 	proj->mlx_ptr = mlx_init();
-	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "Fractol");
-	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
+	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN, WIN, "Fractol");
+	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN, WIN);
 	display(proj);
 	mlx_key_hook(proj->win_ptr, manage_keys, proj);
 	mlx_mouse_hook(proj->win_ptr, manage_mouse, proj);
@@ -72,4 +75,3 @@ int				main(int ac, char **av)
 	mlx_loop(proj->mlx_ptr);
 	return (0);
 }
-
