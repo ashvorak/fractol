@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 12:13:48 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/23 18:37:22 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/24 16:19:47 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ static void	iter(t_proj *proj, int row, int col, int iteration)
 
 	x = 0;
 	y = 0;
-	c_re = (col - WIN / proj->zx) * proj->zy / WIN;
-	c_im = (row - WIN / proj->zx) * proj->zy / WIN;
-	while (x * x + y * y <= 4 && iteration < proj->iteration_max)
+	c_re = col / proj->zoom + proj->zx;
+	c_im = row / proj->zoom + proj->zy;
+	while (x * x + y * y < 4 && iteration < proj->iteration_max)
 	{
 		x_new = x * x - y * y + c_re;
 		y = 2 * x * y + c_im;
@@ -53,10 +53,10 @@ static void	iter(t_proj *proj, int row, int col, int iteration)
 
 static void	*draw(void *p)
 {
-	t_proj *t;
-	int row;
-	int col;
-	int	iteration;
+	int		row;
+	int		col;
+	int		iteration;
+	t_proj	*t;
 
 	t = (t_proj*)p;
 	row = t->y1;
@@ -103,5 +103,4 @@ void		mandelbrot(t_proj *proj)
 		pthread_join(t[i], NULL);
 		i++;
 	}
-	//mlx_put_image_to_window(proj->mlx_ptr, proj->win_ptr, proj->win_image, 0, 0);
 }

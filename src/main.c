@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/23 18:40:15 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/24 15:57:55 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,11 @@ static t_proj	*new_proj(int fractol)
 	proj->fractol = fractol;
 	proj->zx = 2.0;
 	proj->zy = 4.0;
-	proj->y1 = 0;
-	proj->y2 = 0;
+	proj->zoom = 300;
+	proj->zx = -2.05;
+	proj->zy = -1.3;
+	proj->zxx = 0;
+	proj->zyy = 0;
 	proj->colors = NULL;
 	proj->iteration_max = 50;
 	proj->mlx_ptr = NULL;

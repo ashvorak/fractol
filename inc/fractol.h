@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/23 18:35:31 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/24 16:21:17 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@
 # include "../minilibx_macos/mlx.h"
 
 # define WIN 800
-# define THEAT_NUM 8
-# define SCALE 30
+# define THEAT_NUM 4
 
 enum			s_fractol
 {
@@ -42,6 +41,9 @@ typedef struct	s_proj
 	int		y2;
 	double 	zx;
 	double	zy;
+	double	zxx;
+	double	zyy;
+	double	zoom;
 	int		*colors;
 	int		iteration_max;
 	void	*mlx_ptr;
