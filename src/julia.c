@@ -2,6 +2,6 @@
 
 void	julia(t_proj *proj)
 {
-	proj->zx = 0;
+	proj->y1 = 0;
 }
 
