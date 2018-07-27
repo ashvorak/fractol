@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/27 17:10:02 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/27 17:32:00 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ typedef struct	s_proj
 	int		fractol;
 	int		y1;
 	int		y2;
-	double 	Re_min;
-	double	Re_max;
-	double	Im_min;
-	double	Im_max;
+	double 	re_min;
+	double	re_max;
+	double	im_min;
+	double	im_max;
 	double	c_re_j;
 	double	c_im_j;
 	int		move_julia;

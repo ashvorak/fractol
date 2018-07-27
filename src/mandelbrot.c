@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 12:13:48 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/27 15:02:02 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/27 17:50:25 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,19 +34,17 @@ static void	iter(t_proj *proj, int row, int col, int iteration)
 	double	y;
 	double	c_re;
 	double	c_im;
-	double	x_new;
-	double	Re_factor = (proj->Re_max - proj->Re_min)/(WIN - 1);
-	double	Im_factor = (proj->Im_max - proj->Im_min)/(WIN - 1);
+	double	buf;
 
-	c_re = proj->Re_min + col * Re_factor;
-	c_im = proj->Im_min + row * Im_factor;
+	c_re = proj->re_min + col * (proj->re_max - proj->re_min) / (WIN - 1);
+	c_im = proj->im_min + row * (proj->im_max - proj->im_min) / (WIN - 1);
 	x = c_re;
 	y = c_im;
 	while (x * x + y * y < 4 && iteration < proj->iteration_max)
 	{
-		x_new = x * x - y * y + c_re;
+		buf = x * x - y * y + c_re;
 		y = 2 * x * y + c_im;
-		x = x_new;
+		x = buf;
 		iteration++;
 	}
 	(iteration < proj->iteration_max) ? put_pixel(col, row, proj, \

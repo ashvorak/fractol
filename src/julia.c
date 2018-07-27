@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   julia.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/27 17:38:02 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/07/27 17:47:35 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/fractol.h"
 
 static int	*get_colors(int max, int color)
@@ -20,17 +32,15 @@ static void	iter(t_proj *proj, int row, int col, int iteration)
 {
 	double	x;
 	double	y;
-	double	x_new;
-	double	Re_factor = (proj->Re_max - proj->Re_min)/(WIN - 1);
-	double	Im_factor = (proj->Im_max - proj->Im_min)/(WIN - 1);
+	double	buf;
 
-	x = proj->Re_min + col * Re_factor;
-	y = proj->Im_min + row * Im_factor;
+	x = proj->re_min + col * (proj->re_max - proj->re_min) / (WIN - 1);
+	y = proj->im_min + row * (proj->im_max - proj->im_min) / (WIN - 1);
 	while (x * x + y * y < 4 && iteration < proj->iteration_max)
 	{
-		x_new = x * x - y * y + proj->c_re_j;
+		buf = x * x - y * y + proj->c_re_j;
 		y = 2 * x * y + proj->c_im_j;
-		x = x_new;
+		x = buf;
 		iteration++;
 	}
 	(iteration < proj->iteration_max) ? put_pixel(col, row, proj, \

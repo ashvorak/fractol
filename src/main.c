@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/27 17:15:01 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/27 17:46:18 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,12 @@ static t_proj	*new_proj(int fractol)
 	return (proj);
 }
 
-static void		initReIm(t_proj *p, double Re_min, double Re_max, double Im_min)
+static void		init(t_proj *p, double re_min, double re_max, double im_min)
 {
-	p->Re_min = Re_min;
-	p->Re_max = Re_max;
-	p->Im_min = Im_min;
-	p->Im_max = p->Im_min + (p->Re_max - p->Re_min);
+	p->re_min = re_min;
+	p->re_max = re_max;
+	p->im_min = im_min;
+	p->im_max = p->im_min + (p->re_max - p->re_min);
 	if (p->fractol == Mandelbrot)
 		p->iteration_max = 50;
 	else if (p->fractol == Julia)
@@ -77,9 +77,9 @@ int				main(int ac, char **av)
 		ft_usage();
 	proj = new_proj(fractol);
 	if (fractol == Mandelbrot)
-		initReIm(proj, -2.0, 1.0, -1.6);
+		init(proj, -2.0, 1.0, -1.6);
 	else if (fractol == Julia)
-		initReIm(proj, -2.0, 1.9, -2.0);
+		init(proj, -2.0, 1.9, -2.0);
 	proj->mlx_ptr = mlx_init();
 	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN, WIN, "Fractol");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN, WIN);
