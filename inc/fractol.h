@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/25 16:13:42 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/27 17:10:02 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 # include "../minilibx_macos/mlx.h"
 
 # define WIN 1000
-# define THEAT_NUM 4
+# define THEAT_NUM 8
 
 enum			s_fractol
 {
@@ -43,7 +43,9 @@ typedef struct	s_proj
 	double	Re_max;
 	double	Im_min;
 	double	Im_max;
-	double	zoom;
+	double	c_re_j;
+	double	c_im_j;
+	int		move_julia;
 	int		*colors;
 	int		iteration_max;
 	void	*mlx_ptr;
@@ -62,5 +64,6 @@ void			mandelbrot(t_proj *proj);
 void			julia(t_proj *proj);
 int				manage_keys(int key, t_proj *proj);
 int				manage_mouse(int mousecode, int x, int y, t_proj *proj);
+int				manage_mouse_julia(int x, int y, t_proj *proj);
 
 #endif
