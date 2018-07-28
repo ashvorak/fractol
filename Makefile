@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/07/27 17:56:21 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/07/28 15:15:49 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,8 @@ FLAGS = -Wall -Wextra -Werror
 
 SRC =	./src/main.c \
 		./src/display.c \
-		./src/mandelbrot.c \
-		./src/julia.c \
-		./src/hook.c
+		./src/hook.c \
+		./src/fractol.c
 
 MLIB = make -C lib
 

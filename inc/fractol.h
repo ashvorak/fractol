@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/27 17:32:00 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/28 15:23:14 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FRACTOL_H
 
 # include <fcntl.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <errno.h>
 # include <math.h>
@@ -26,12 +25,15 @@
 
 # define WIN 1000
 # define THEAT_NUM 8
+# define SQR(x) (x*x)
+# define ABS(x) (((x) < 0 ) ? -(x) : (x))
 
 enum			s_fractol
 {
 	Fail,
 	Mandelbrot,
-	Julia
+	Julia,
+	Burningship
 };
 
 typedef struct	s_proj
@@ -45,8 +47,8 @@ typedef struct	s_proj
 	double	im_max;
 	double	c_re_j;
 	double	c_im_j;
+	int		color;
 	int		move_julia;
-	int		*colors;
 	int		iteration_max;
 	void	*mlx_ptr;
 	void	*win_ptr;
@@ -60,8 +62,8 @@ typedef struct	s_proj
 void			display(t_proj *proj);
 void			put_pixel(int x, int y, t_proj *proj, int color);
 
-void			mandelbrot(t_proj *proj);
-void			julia(t_proj *proj);
+void			fractol(t_proj *proj);
+
 int				manage_keys(int key, t_proj *proj);
 int				manage_mouse(int mousecode, int x, int y, t_proj *proj);
 int				manage_mouse_julia(int x, int y, t_proj *proj);
