@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/28 15:23:14 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/28 17:07:12 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # define SQR(x) (x*x)
 # define ABS(x) (((x) < 0 ) ? -(x) : (x))
 
-enum			s_fractol
+enum			e_fractol
 {
 	Fail,
 	Mandelbrot,
@@ -39,9 +39,9 @@ enum			s_fractol
 typedef struct	s_proj
 {
 	int		fractol;
-	int		y1;
-	int		y2;
-	double 	re_min;
+	int		row1;
+	int		row2;
+	double	re_min;
 	double	re_max;
 	double	im_min;
 	double	im_max;
@@ -64,6 +64,7 @@ void			put_pixel(int x, int y, t_proj *proj, int color);
 
 void			fractol(t_proj *proj);
 
+int				exit_x(t_proj *proj);
 int				manage_keys(int key, t_proj *proj);
 int				manage_mouse(int mousecode, int x, int y, t_proj *proj);
 int				manage_mouse_julia(int x, int y, t_proj *proj);

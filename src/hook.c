@@ -6,11 +6,17 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/22 17:30:25 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/27 17:37:30 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/28 17:07:29 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fractol.h"
+
+int			exit_x(t_proj *proj)
+{
+	free(proj);
+	exit(0);
+}
 
 static void	zoom(t_proj *proj, double m_re, double m_im, double k)
 {
@@ -59,16 +65,24 @@ int			manage_mouse_julia(int x, int y, t_proj *proj)
 int			manage_keys(int key, t_proj *proj)
 {
 	if (key == 53)
+	{
+		free(proj);
 		exit(1);
+	}
 	else if (key == 78)
-	{
-		key++;
-		(proj->iteration_max > 1) ? proj->iteration_max -= 1 : 0;
-	}
+		proj->iteration_max -= (proj->iteration_max > 1) ? 1 : 0;
 	else if (key == 69)
-	{
-		key++;
-	}
+		proj->iteration_max += (proj->iteration_max < 1000) ? 1 : 0;
+	else if (key == 3 && proj->fractol == Julia)
+		proj->move_julia = 0;
+	else if (key == 5 && proj->fractol == Julia)
+		proj->move_julia = 1;
+	else if (key == 18)
+		proj->color = 16752762;
+	else if (key == 19)
+		proj->color = 65407;
+	else if (key == 20)
+		proj->color = 2003199;
 	display(proj);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/28 15:35:36 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/28 17:05:29 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static void		ft_usage(void)
 	ft_printf("Usage : ./fractol <name>\n");
 	ft_printf("        <name> : Mandelbrot\n");
 	ft_printf("               : Julia\n");
+	ft_printf("               : Burningship\n");
 	exit(1);
 }
 
@@ -50,7 +51,7 @@ static void		init(t_proj *p, double re_min, double re_max, double im_min)
 	{
 		p->iteration_max = 50;
 		p->color = 511723;
-	}	
+	}
 	else if (p->fractol == Julia)
 	{
 		p->iteration_max = 300;
@@ -59,13 +60,8 @@ static void		init(t_proj *p, double re_min, double re_max, double im_min)
 	else
 	{
 		p->iteration_max = 100;
-		p->color = 511723;
-	}		
-}
-
-static int		exit_x(void)
-{
-	exit(0);
+		p->color = 16716947;
+	}
 }
 
 static int		check_fractol(char *av)
@@ -93,7 +89,7 @@ int				main(int ac, char **av)
 	else if (fractol == Julia)
 		init(proj, -2.0, 1.9, -2.0);
 	else if (fractol == Burningship)
-		init(proj, -2.0, 1.9, -2.0);	
+		init(proj, -2.0, 1.9, -2.0);
 	proj->mlx_ptr = mlx_init();
 	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN, WIN, "Fractol");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN, WIN);
