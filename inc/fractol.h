@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/28 17:07:12 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/31 14:04:34 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # include "../minilibx_macos/mlx.h"
 
 # define WIN 1000
-# define THEAT_NUM 8
+# define THEAT_NUM 4
 # define SQR(x) (x*x)
 # define ABS(x) (((x) < 0 ) ? -(x) : (x))
 

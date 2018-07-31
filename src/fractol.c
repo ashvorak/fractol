@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 12:13:48 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/28 16:52:04 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/31 14:16:55 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,11 @@ static void	burningship(t_proj *proj, int row, int col, int i)
 		x = buf;
 		i++;
 	}
-	(i < proj->iteration_max) ? put_pixel(col, row, proj, \
-	proj->color * i) : put_pixel(col, row, proj, 0);
+	if (i < proj->iteration_max)
+		(i == 0) ? put_pixel(col, row, proj, proj->color) \
+		: put_pixel(col, row, proj, proj->color * i);
+	else
+		put_pixel(col, row, proj, 0);
 }
 
 static void	julia(t_proj *proj, int row, int col, int i)
@@ -50,8 +53,11 @@ static void	julia(t_proj *proj, int row, int col, int i)
 		x = buf;
 		i++;
 	}
-	(i < proj->iteration_max) ? put_pixel(col, row, proj, \
-	proj->color * i) : put_pixel(col, row, proj, 0);
+	if (i < proj->iteration_max)
+		(i == 0) ? put_pixel(col, row, proj, proj->color) \
+		: put_pixel(col, row, proj, proj->color * i);
+	else
+		put_pixel(col, row, proj, 0);
 }
 
 static void	mandelbrot(t_proj *proj, int row, int col, int i)
@@ -73,8 +79,11 @@ static void	mandelbrot(t_proj *proj, int row, int col, int i)
 		x = buf;
 		i++;
 	}
-	(i < proj->iteration_max) ? put_pixel(col, row, proj, \
-	proj->color * i) : put_pixel(col, row, proj, 0);
+	if (i < proj->iteration_max)
+		(i == 0) ? put_pixel(col, row, proj, proj->color) \
+		: put_pixel(col, row, proj, proj->color * i);
+	else
+		put_pixel(col, row, proj, 0);
 }
 
 static void	*draw(void *p)
@@ -117,11 +126,6 @@ void		fractol(t_proj *proj)
 		ft_memcpy((void*)&p[i], (void*)proj, sizeof(t_proj));
 		p[i].row1 = (WIN / THEAT_NUM) * i;
 		p[i].row2 = p[i].row1 + (WIN / THEAT_NUM);
-		i++;
-	}
-	i = 0;
-	while (i < THEAT_NUM)
-	{
 		pthread_create(&t[i], NULL, draw, &p[i]);
 		i++;
 	}

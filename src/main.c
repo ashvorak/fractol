@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/07/28 17:05:29 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/31 11:05:10 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ static void		ft_usage(void)
 	ft_printf("Usage : ./fractol <name>\n");
 	ft_printf("        <name> : Mandelbrot\n");
 	ft_printf("               : Julia\n");
-	ft_printf("               : Burningship\n");
+	ft_printf("               : Burningship\n\n");
+	ft_printf("        ESC:   : EXIT\n");
 	exit(1);
 }
 

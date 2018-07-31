@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/07/28 15:15:49 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/07/31 10:59:27 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ LIB = lib/libftprintf.a
 all: $(NAME)
 
 $(NAME): $(SRC)
-	$(MLIB) 
+	$(MLIB)
 	gcc $(FLAGS) -lmlx -framework OpenGL -framework AppKit $(SRC) $(LIB) -o $(NAME)
 
 clean:
