@@ -3,7 +3,7 @@
 This project’s goal is to create a small fractal exploration program. 
 
 Mandelbrot:
-  
+  ![png/Mandelbrot]
 Julia:
 
 Burningship:
