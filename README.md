@@ -7,7 +7,7 @@ Mandelbrot:
 Julia:
   ![Image alt](https://github.com/ashvorak/fractol/raw/master/png/Julia.png)
 Burningship:
-  ![Image alt](https://github.com/ashvorak/fractol/raw/master/png/Burningship.png)
+  ![Image alt](https://github.com/ashvorak/fractol/raw/master/png/burningship.png)
   
 Bonuses:
   - The zoom follow the actual mouse position.
